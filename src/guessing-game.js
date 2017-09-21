@@ -11,15 +11,15 @@ class GuessingGame {
     }
 
     guess() {
-		return (~~((this.min+this.max)/2));
+		return (Math.round((this.min+this.max)/2));
     }
 
     lower() {
-		this.max=(~~((this.min+this.max)/2))-1;
+		this.max=(Math.round((this.min+this.max)/2))-1;
     }
 
     greater() {
-		this.min=(~~((this.min+this.max)/2))+1;
+		this.min=(Math.round((this.min+this.max)/2))+1;
     }
 }
 
